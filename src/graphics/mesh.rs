@@ -46,7 +46,7 @@ pub struct Vertex {
     ///
     /// This will be multiplied by the `color` of the `DrawParams` when drawing a
     /// mesh.
-    pub color: Color,
+    pub color: [u8;4],
 }
 
 impl Vertex {
@@ -55,7 +55,7 @@ impl Vertex {
         Vertex {
             position,
             uv,
-            color,
+            color: color.into(),
         }
     }
 }

@@ -279,8 +279,8 @@ impl GraphicsDevice {
             self.state.gl.vertex_attrib_pointer_f32(
                 2,
                 4,
-                glow::FLOAT,
-                false,
+                glow::UNSIGNED_BYTE,
+                true,
                 buffer.stride() as i32,
                 16,
             );
